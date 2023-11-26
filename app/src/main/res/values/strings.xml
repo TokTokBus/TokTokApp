@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">toktokbus</string>
+    <string name="speak_bus">버스를 말해주세요</string>
 </resources>

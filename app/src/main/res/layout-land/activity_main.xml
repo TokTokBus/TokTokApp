@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.761" />
 
+
     <Button
         android:id="@+id/btnSpeech"
         android:layout_width="wrap_content"
@@ -28,12 +29,13 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="105dp"
         android:layout_marginEnd="65dp"
-        android:background="@drawable/button_round"
+        android:background="@drawable/button_listen"
         android:drawableTop="@drawable/img"
         android:paddingTop="55dp"
         android:text="버스를 말해주세요"
         android:textColor="@color/black"
         android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnListen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,6 +63,9 @@
         android:text="상태 체크"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSpeech" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSpeech"
+        app:layout_constraintVertical_bias="0.69" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
