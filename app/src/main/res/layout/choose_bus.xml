@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back_color"
-    tools:context=".MainActivity">
+    tools:context=".ChooseBus">
 
     <Button
         android:id="@+id/btnSpeech"
@@ -15,8 +15,8 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="72dp"
         android:layout_marginEnd="65dp"
-        android:background="@drawable/button_speak"
-        android:drawableTop="@drawable/img"
+        android:background="@drawable/button_round"
+        android:drawableTop="@drawable/mic"
         android:paddingTop="55dp"
         android:text="버스를 말해주세요"
         android:textColor="@color/black"
@@ -46,7 +46,7 @@
             android:layout_marginLeft="80dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_listen"
-            android:drawableTop="@drawable/img_1"
+            android:drawableTop="@drawable/ear"
             android:paddingTop="50dp"
             android:text="touch twice"
             android:textColor="@color/black"

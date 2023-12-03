@@ -31,7 +31,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/img" />
+            android:src="@drawable/mic" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_2" /> <!-- 이미지 리소스 설정 -->
+            android:src="@drawable/camera" /> <!-- 이미지 리소스 설정 -->
 
         <TextView
             android:layout_width="wrap_content"
