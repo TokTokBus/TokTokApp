@@ -17,5 +17,13 @@ class MainMenu : AppCompatActivity() {
             val intent = Intent(this, ChooseBus::class.java)
             startActivity(intent)
         }
+
+        val buttonCamera = findViewById<LinearLayout>(R.id.btn_camera)
+        buttonCamera.setOnClickListener{
+            val intent = Intent (this, RecBus::class.java)
+            startActivity(intent)
+        }
     }
+
+
 }
