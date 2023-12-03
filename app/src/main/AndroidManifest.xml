@@ -38,7 +38,10 @@
         <activity
             android:name=".ChooseBus"
             android:exported="true">
-
+        </activity>
+        <activity
+            android:name=".RecBus"
+            android:exported="true">
         </activity>
     </application>
 
