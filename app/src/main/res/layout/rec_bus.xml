@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_color">
+
+    <Button
+        android:id="@+id/startcambtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="122dp"
+        android:paddingTop="55dp"
+        android:background="@drawable/button_round"
+        android:drawableTop="@drawable/img_2"
+        android:orientation="vertical"
+        android:text="촬영 시작"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/listeninfobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:paddingTop="55dp"
+        android:background="@drawable/button_round"
+        android:drawableTop="@drawable/img_3"
+        android:text="버스 도착 정보 듣기"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="420dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

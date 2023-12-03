@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="45dp"
+        android:orientation="vertical"
+        android:background="@drawable/infobackground">
+
+        <TextView
+            android:id="@+id/textView2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="지금 앞에 있는 버스는"
+            android:textSize="30dp"/>
+
+        <LinearLayout
+            android:layout_width="234dp"
+            android:layout_height="81dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/gray_btn_color">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="85dp"
+                android:text="641"
+                android:textSize="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
