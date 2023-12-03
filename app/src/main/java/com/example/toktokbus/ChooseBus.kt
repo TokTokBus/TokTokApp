@@ -12,16 +12,16 @@ import android.speech.SpeechRecognizer
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.toktokbus.databinding.ActivityMainBinding
+import com.example.toktokbus.databinding.ChooseBusBinding
 
-private lateinit var binding: ActivityMainBinding
+private lateinit var binding: ChooseBusBinding
 
-class MainActivity : AppCompatActivity() {
+class ChooseBus : AppCompatActivity() {
     private lateinit var speechRecognizer: SpeechRecognizer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ChooseBusBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         // <말하기> 버튼 눌러서 음성인식 시작
         binding.btnSpeech.setOnClickListener {
             // 새 SpeechRecognizer 를 만드는 팩토리 메서드
-            speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this@MainActivity)
+            speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this@ChooseBus)
             speechRecognizer.setRecognitionListener(recognitionListener)    // 리스너 설정
             speechRecognizer.startListening(intent)                         // 듣기 시작
         }
@@ -47,11 +47,11 @@ class MainActivity : AppCompatActivity() {
     private fun requestPermission() {
         // 버전 체크, 권한 허용했는지 체크
         if (Build.VERSION.SDK_INT >= 23 &&
-            ContextCompat.checkSelfPermission(this@MainActivity, Manifest.permission.RECORD_AUDIO)
+            ContextCompat.checkSelfPermission(this@ChooseBus, Manifest.permission.RECORD_AUDIO)
             != PackageManager.PERMISSION_GRANTED
         ) {
             ActivityCompat.requestPermissions(
-                this@MainActivity,
+                this@ChooseBus,
                 arrayOf(Manifest.permission.RECORD_AUDIO), 0
             )
         }

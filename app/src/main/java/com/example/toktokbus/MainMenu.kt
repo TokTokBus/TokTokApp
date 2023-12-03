@@ -14,7 +14,7 @@ class MainMenu : AppCompatActivity() {
 
         val buttonBus = findViewById<LinearLayout>(R.id.btn_bus)
         buttonBus.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ChooseBus::class.java)
             startActivity(intent)
         }
     }
