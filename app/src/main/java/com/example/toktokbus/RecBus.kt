@@ -10,10 +10,5 @@ class RecBus : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.rec_bus)
 
-        val button = findViewById<Button>(R.id.startcambtn)
-        button.setOnClickListener {
-            val intent = Intent(this, NewActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
