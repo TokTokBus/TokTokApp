@@ -1,4 +1,5 @@
-# TokTokApp
+# TokTokApp 
+# <img src="https://github.com/TokTokBus/TokTokApp/assets/55822543/9a0ab241-3de9-4d36-b0de-05497c7938ad" width="100" height="100"/>
 ## Introduce our Teams
   * 20192918 이민욱 - 프론트 담당
   * 20192895 김예린 - 음성 인식 및 어플 구현 담당
