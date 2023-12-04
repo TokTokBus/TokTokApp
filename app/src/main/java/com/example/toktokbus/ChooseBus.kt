@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.speech.RecognitionListener
 import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
+import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -62,12 +63,14 @@ class ChooseBus : AppCompatActivity() {
     private val recognitionListener: RecognitionListener = object : RecognitionListener {
         // 말하기 시작할 준비가되면 호출
         override fun onReadyForSpeech(params: Bundle) {
+            Log.d("SpeechRecognizer", "onReadyForSpeech")
             Toast.makeText(applicationContext, "음성인식 시작", Toast.LENGTH_SHORT).show()
             binding.tvState.text = "이제 말씀하세요!"
         }
 
         // 말하기 시작했을 때 호출
         override fun onBeginningOfSpeech() {
+            Log.d("SpeechRecognizer", "onBeginningOfSpeech")
             binding.tvState.text = "잘 듣고 있어요."
         }
 
@@ -84,6 +87,7 @@ class ChooseBus : AppCompatActivity() {
 
         // 오류 발생했을 때 호출
         override fun onError(error: Int) {
+            Log.d("SpeechRecognizer", "onError: $error")
             val message = when (error) {
                 SpeechRecognizer.ERROR_AUDIO -> "오디오 에러"
                 SpeechRecognizer.ERROR_CLIENT -> "클라이언트 에러"
