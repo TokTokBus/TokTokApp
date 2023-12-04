@@ -1,16 +1,17 @@
 # TokTokApp 
 # <img src="https://github.com/TokTokBus/TokTokApp/assets/55822543/9a0ab241-3de9-4d36-b0de-05497c7938ad" width="100" height="100"/>
 ## Introduce our Teams
-  * 20192918 이민욱 - 프론트 담당
+  * 20192918 이민욱 - 디자인 및 프론트 담당
   * 20192895 김예린 - 음성 인식 및 어플 구현 담당
-  * 20201784 김민서 - 버스 인식 담당
+  * 20201784 김민서 - AI 및 버스 인식 담당
 ## What's problems :question:
 <img src="https://github.com/TokTokBus/TokTokApp/assets/55822543/6f512496-2e03-45c7-9610-8ee402fcd731" width="400" height="300"/> <br>
 <br>
 버스가 여러대 도착하는 경우, 어떤 버스가 앞에 도착했는지 알 수 없습니다.
 
 ## Introduce our App 
-저희 어플은 시각장애인 분들이 스스로 버스를 탈 수 있도록 도와주는 어플리케이션입니다. 
+저희 어플은 시각장애인 분들이 스스로 버스를 탈 수 있도록 도와주는 어플리케이션입니다.<br>
+별도의 도움 없이, 자신이 타고 싶은 버스를 음성으로 인식하고, 그 버스 번호를 인식해서 어떤 버스가 도착했는지 파악할 수 있도록 도와주는 시스템입니다.
 * * *
 ## Nortion [ 회의록 ](https://www.notion.so/2023-opensource-795329d934ac4c6d862488ab9f6dcea1) :page_facing_up:
 * * *
